@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E184234165A42DB001A3472 /* MyQuaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E184233165A42DB001A3472 /* MyQuaternion.cpp */; };
+		1E1EB0D516AFB8A900FF4FE6 /* SunPosition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E1EB0D416AFB8A900FF4FE6 /* SunPosition.cpp */; };
+		1E44EB57157D9793002E2EB6 /* CollisionMethod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E44EB56157D9793002E2EB6 /* CollisionMethod.cpp */; };
+		1E44EB74157DA9CC002E2EB6 /* CalLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E44EB73157DA9CC002E2EB6 /* CalLib.cpp */; };
+		1E6958E114F0FF3A003E043D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6958E014F0FF3A003E043D /* OpenGL.framework */; };
+		1E6958E314F0FF48003E043D /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6958E214F0FF48003E043D /* GLUT.framework */; };
+		1E6958E614F10074003E043D /* MyOpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1E6958E514F10074003E043D /* MyOpenGLView.mm */; };
+		1E69592214F10A82003E043D /* MyFileMethod.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1E69592114F10A82003E043D /* MyFileMethod.mm */; };
+		1E6F231F1673888C003B49B6 /* ShadowRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E6F231E1673888C003B49B6 /* ShadowRender.cpp */; };
+		1E91C5AC153805D500C40FDA /* GetData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E91C5AB153805D500C40FDA /* GetData.cpp */; };
+		1E9FF8C6158EC06A008D90AE /* RayTrace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FF8C5158EC06A008D90AE /* RayTrace.cpp */; };
+		1E9FFA38159AFF5F008D90AE /* Rover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FFA37159AFF5F008D90AE /* Rover.cpp */; };
+		1EC2266B1574E96300F0CCA0 /* MyVector3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EC2266A1574E96300F0CCA0 /* MyVector3D.cpp */; settings = {COMPILER_FLAGS = "-lm"; }; };
+		1EC226851574F50A00F0CCA0 /* GravitationCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EC226841574F50A00F0CCA0 /* GravitationCalculator.cpp */; };
+		1EC2272B15750D2200F0CCA0 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97324FDCFA39411CA2CEA /* AppKit.framework */; };
+		1EC2272C15750D2200F0CCA0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E42FB307B3F0F600E4EEF1 /* CoreData.framework */; };
+		1EC2272D15750D2200F0CCA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+		1ED661D71568DF1B002481A2 /* SetupWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED661D61568DF1B002481A2 /* SetupWindowController.m */; };
+		1EFB4AED1567A00700733670 /* CalcTrajectory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1EFB4AEC1567A00700733670 /* CalcTrajectory.mm */; };
+		256AC3DA0F4B6AC300CF3369 /* TestOpenGLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* TestOpenGLAppDelegate.m */; };
+		544ED8B31C06F753003BA81E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544ED8B21C06F753003BA81E /* Images.xcassets */; };
+		54B0A2B11C1EDDDF00F6E052 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		54E9FD3C1C1ECC91009C5147 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E9FD3B1C1ECC91009C5147 /* GLKit.framework */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1E184233165A42DB001A3472 /* MyQuaternion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyQuaternion.cpp; sourceTree = "<group>"; };
+		1E184242165A42FA001A3472 /* MyQuaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyQuaternion.h; sourceTree = "<group>"; };
+		1E1EB0D316AFB8A900FF4FE6 /* SunPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunPosition.h; sourceTree = "<group>"; };
+		1E1EB0D416AFB8A900FF4FE6 /* SunPosition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SunPosition.cpp; sourceTree = "<group>"; };
+		1E44EB55157D9793002E2EB6 /* CollisionMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionMethod.h; sourceTree = "<group>"; };
+		1E44EB56157D9793002E2EB6 /* CollisionMethod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CollisionMethod.cpp; sourceTree = "<group>"; };
+		1E44EB72157DA9CC002E2EB6 /* CalLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalLib.h; sourceTree = "<group>"; };
+		1E44EB73157DA9CC002E2EB6 /* CalLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalLib.cpp; sourceTree = "<group>"; };
+		1E6958E014F0FF3A003E043D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		1E6958E214F0FF48003E043D /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		1E6958E414F10074003E043D /* MyOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOpenGLView.h; sourceTree = "<group>"; };
+		1E6958E514F10074003E043D /* MyOpenGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyOpenGLView.mm; sourceTree = "<group>"; };
+		1E69592014F10A82003E043D /* MyFileMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFileMethod.h; sourceTree = "<group>"; };
+		1E69592114F10A82003E043D /* MyFileMethod.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyFileMethod.mm; sourceTree = "<group>"; };
+		1E6F231D1673888C003B49B6 /* ShadowRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowRender.h; sourceTree = "<group>"; };
+		1E6F231E1673888C003B49B6 /* ShadowRender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShadowRender.cpp; sourceTree = "<group>"; };
+		1E91C5AA153805D500C40FDA /* GetData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetData.h; sourceTree = "<group>"; };
+		1E91C5AB153805D500C40FDA /* GetData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GetData.cpp; sourceTree = "<group>"; };
+		1E9FF8C4158EC06A008D90AE /* RayTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayTrace.h; sourceTree = "<group>"; };
+		1E9FF8C5158EC06A008D90AE /* RayTrace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RayTrace.cpp; sourceTree = "<group>"; };
+		1E9FFA36159AFF5F008D90AE /* Rover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rover.h; sourceTree = "<group>"; };
+		1E9FFA37159AFF5F008D90AE /* Rover.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rover.cpp; sourceTree = "<group>"; };
+		1EC226691574E96300F0CCA0 /* MyVector3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyVector3D.h; sourceTree = "<group>"; };
+		1EC2266A1574E96300F0CCA0 /* MyVector3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyVector3D.cpp; sourceTree = "<group>"; };
+		1EC226831574F50A00F0CCA0 /* GravitationCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravitationCalculator.h; sourceTree = "<group>"; };
+		1EC226841574F50A00F0CCA0 /* GravitationCalculator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GravitationCalculator.cpp; sourceTree = "<group>"; };
+		1ED661D51568DF1B002481A2 /* SetupWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupWindowController.h; sourceTree = "<group>"; };
+		1ED661D61568DF1B002481A2 /* SetupWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupWindowController.m; sourceTree = "<group>"; };
+		1EFB4AEB1567A00700733670 /* CalcTrajectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcTrajectory.h; sourceTree = "<group>"; };
+		1EFB4AEC1567A00700733670 /* CalcTrajectory.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = CalcTrajectory.mm; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* TestOpenGLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOpenGLAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* TestOpenGLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOpenGLAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* MuROS20160212_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuROS20160212_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		543C2D371C4E76C000C50599 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../../Dev/misc_alpha_dsk/MacIntel_OSX_AppleC_64bit/packages/alpha_dsk_c/src; sourceTree = "<group>"; };
+		544ED8B21C06F753003BA81E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RoverSimulator20130123/Images.xcassets; sourceTree = "<group>"; };
+		54E9FD3B1C1ECC91009C5147 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		8D1107310486CEB800E47090 /* MuROS20160212-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MuROS20160212-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* MuROS20160212.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuROS20160212.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E9FD3C1C1ECC91009C5147 /* GLKit.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				1E6958E114F0FF3A003E043D /* OpenGL.framework in Frameworks */,
+				1E6958E314F0FF48003E043D /* GLUT.framework in Frameworks */,
+				1EC2272B15750D2200F0CCA0 /* AppKit.framework in Frameworks */,
+				1EC2272C15750D2200F0CCA0 /* CoreData.framework in Frameworks */,
+				1EC2272D15750D2200F0CCA0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1E184242165A42FA001A3472 /* MyQuaternion.h */,
+				1E184233165A42DB001A3472 /* MyQuaternion.cpp */,
+				1E6958E414F10074003E043D /* MyOpenGLView.h */,
+				1E6958E514F10074003E043D /* MyOpenGLView.mm */,
+				256AC3D80F4B6AC300CF3369 /* TestOpenGLAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* TestOpenGLAppDelegate.m */,
+				1E91C5AA153805D500C40FDA /* GetData.h */,
+				1E91C5AB153805D500C40FDA /* GetData.cpp */,
+				1EFB4AEB1567A00700733670 /* CalcTrajectory.h */,
+				1EFB4AEC1567A00700733670 /* CalcTrajectory.mm */,
+				1ED661D51568DF1B002481A2 /* SetupWindowController.h */,
+				1ED661D61568DF1B002481A2 /* SetupWindowController.m */,
+				1EC226691574E96300F0CCA0 /* MyVector3D.h */,
+				1EC2266A1574E96300F0CCA0 /* MyVector3D.cpp */,
+				1EC226831574F50A00F0CCA0 /* GravitationCalculator.h */,
+				1EC226841574F50A00F0CCA0 /* GravitationCalculator.cpp */,
+				1E44EB55157D9793002E2EB6 /* CollisionMethod.h */,
+				1E44EB56157D9793002E2EB6 /* CollisionMethod.cpp */,
+				1E44EB72157DA9CC002E2EB6 /* CalLib.h */,
+				1E44EB73157DA9CC002E2EB6 /* CalLib.cpp */,
+				1E9FF8C4158EC06A008D90AE /* RayTrace.h */,
+				1E9FF8C5158EC06A008D90AE /* RayTrace.cpp */,
+				1E9FFA36159AFF5F008D90AE /* Rover.h */,
+				1E9FFA37159AFF5F008D90AE /* Rover.cpp */,
+				1E6F231D1673888C003B49B6 /* ShadowRender.h */,
+				1E6F231E1673888C003B49B6 /* ShadowRender.cpp */,
+				1E1EB0D316AFB8A900FF4FE6 /* SunPosition.h */,
+				1E1EB0D416AFB8A900FF4FE6 /* SunPosition.cpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* MuROS20160212.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* TestOpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = TestOpenGL;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1E69592014F10A82003E043D /* MyFileMethod.h */,
+				1E69592114F10A82003E043D /* MyFileMethod.mm */,
+				256AC3F00F4B6AF500CF3369 /* MuROS20160212_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				544ED8B21C06F753003BA81E /* Images.xcassets */,
+				8D1107310486CEB800E47090 /* MuROS20160212-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				543C2D371C4E76C000C50599 /* src */,
+				1E6958E014F0FF3A003E043D /* OpenGL.framework */,
+				1E6958E214F0FF48003E043D /* GLUT.framework */,
+				54E9FD3B1C1ECC91009C5147 /* GLKit.framework */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* MuROS20160212 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MuROS20160212" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuROS20160212;
+			productInstallPath = "$(HOME)/Applications";
+			productName = TestOpenGL;
+			productReference = 8D1107320486CEB800E47090 /* MuROS20160212.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MuROS20160212" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* TestOpenGL */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* MuROS20160212 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544ED8B31C06F753003BA81E /* Images.xcassets in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				54B0A2B11C1EDDDF00F6E052 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFB4AED1567A00700733670 /* CalcTrajectory.mm in Sources */,
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				1E6958E614F10074003E043D /* MyOpenGLView.mm in Sources */,
+				1EC2266B1574E96300F0CCA0 /* MyVector3D.cpp in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* TestOpenGLAppDelegate.m in Sources */,
+				1E69592214F10A82003E043D /* MyFileMethod.mm in Sources */,
+				1EC226851574F50A00F0CCA0 /* GravitationCalculator.cpp in Sources */,
+				1E91C5AC153805D500C40FDA /* GetData.cpp in Sources */,
+				1ED661D71568DF1B002481A2 /* SetupWindowController.m in Sources */,
+				1E44EB57157D9793002E2EB6 /* CollisionMethod.cpp in Sources */,
+				1E44EB74157DA9CC002E2EB6 /* CalLib.cpp in Sources */,
+				1E9FF8C6158EC06A008D90AE /* RayTrace.cpp in Sources */,
+				1E9FFA38159AFF5F008D90AE /* Rover.cpp in Sources */,
+				1E184234165A42DB001A3472 /* MyQuaternion.cpp in Sources */,
+				1E6F231F1673888C003B49B6 /* ShadowRender.cpp in Sources */,
+				1E1EB0D516AFB8A900FF4FE6 /* SunPosition.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+			wrapsLines = 1;
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MuROS20160212_Prefix.pch;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
+				INFOPLIST_FILE = "MuROS20160212-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = (
+					"$(PROJECT_DIR)/lib/cspice.a",
+					"$(PROJECT_DIR)/lib/dsklib_c.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = MuROS20160212;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MuROS20160212_Prefix.pch;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
+				INFOPLIST_FILE = "MuROS20160212-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = (
+					"$(PROJECT_DIR)/lib/cspice.a",
+					"$(PROJECT_DIR)/lib/dsklib_c.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = MuROS20160212;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"$(PROJECT_DIR)/lib/cspice.a",
+					"$(PROJECT_DIR)/lib/dsklib_c.a",
+				);
+				PREBINDING = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
+				LINKER_DISPLAYS_MANGLED_NAMES = YES;
+				OTHER_LDFLAGS = (
+					"$(PROJECT_DIR)/lib/cspice.a",
+					"$(PROJECT_DIR)/lib/dsklib_c.a",
+				);
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MuROS20160212" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MuROS20160212" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

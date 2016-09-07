@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'TestOpenGL' target in the 'TestOpenGL' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
